@@ -12,6 +12,7 @@ import {HomeComponent} from './home/home.component';
       </header>
       <section class="content">
         <app-home/>
+        
       </section>
     </main>
   `,
