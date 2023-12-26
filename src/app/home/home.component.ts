@@ -14,7 +14,8 @@ import {HousingLocationComponent} from '../housing_location/housing_location.com
       </form>
     </section>
     <section class="results">
-  <app-housing-location></app-housing-location>
+      <app-housing-location [housingLocation]="housingLocation"]></app-housing-location>
+      
     </section>
     
   `,
