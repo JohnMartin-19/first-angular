@@ -28,9 +28,9 @@ export class HomeComponent {
   housingLocationList: HousingLocation[] = [
     {
       id: 0,
-      name: 'Acme Fresh Start Housing',
-      city: 'Chicago',
-      state: 'IL',
+      name: 'Green Court',
+      city: 'NAKURU',
+      state: 'NA',
       photo: `${this.baseUrl}/bernard-hermant-CLKGGwIBTaY-unsplash.jpg`,
       availableUnits: 4,
       wifi: true,
@@ -38,9 +38,9 @@ export class HomeComponent {
     },
     {
       id: 1,
-      name: 'A113 Transitional Housing',
-      city: 'Santa Monica',
-      state: 'CA',
+      name: 'Green Gardens',
+      city: 'NAKURU',
+      state: 'NA',
       photo: `${this.baseUrl}/brandon-griggs-wR11KBaB86U-unsplash.jpg`,
       availableUnits: 0,
       wifi: false,
@@ -48,9 +48,9 @@ export class HomeComponent {
     },
     {
       id: 2,
-      name: 'Warm Beds Housing Support',
-      city: 'Juneau',
-      state: 'AK',
+      name: 'JUMBLE HOUSE',
+      city: 'GILGIL',
+      state: 'GIL',
       photo: `${this.baseUrl}/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg`,
       availableUnits: 1,
       wifi: false,
@@ -58,7 +58,7 @@ export class HomeComponent {
     },
     {
       id: 3,
-      name: 'Homesteady Housing',
+      name: 'HOUSY HOUSING',
       city: 'Chicago',
       state: 'IL',
       photo: `${this.baseUrl}/ian-macdonald-W8z6aiwfi1E-unsplash.jpg`,
