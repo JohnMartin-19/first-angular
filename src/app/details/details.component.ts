@@ -28,6 +28,7 @@ import {HousingLocation} from '../housing_location/locationList'
    </article>
   `,
   styles: [
+    './details.component.css'
   ]
 })
 export class DetailsComponent {
