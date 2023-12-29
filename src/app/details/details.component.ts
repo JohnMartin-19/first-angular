@@ -6,7 +6,7 @@ import {HousingLocation} from '../housing_location/locationList'
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,ActivatedRoute,HousingService,HousingService],
   template: `
     <p>
       details works!
