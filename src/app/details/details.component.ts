@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {ActivatedRoute} from '@angular/router';
 import {HousingService} from '../housing.service';
 import {HousingLocation} from '../housing_location/locationList'
+import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 @Component({
   selector: 'app-details',
   standalone: true,
@@ -26,6 +27,19 @@ import {HousingLocation} from '../housing_location/locationList'
           <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
           <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
    
+
+          <section class="listing-apply">
+        <h2 class="section-heading">Apply now to live here</h2>
+        <form [formGroup]="applyForm" (submit)="submitApplication()">
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" formControlName="firstName" />
+          <label for="last-name">Last Name</label>
+          <input id="last-name" type="text" formControlName="lastName" />
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" />
+          <button type="submit" class="primary">Apply now</button>
+        </form>
+      </section>
   `,
   styleUrls: [
     './details.component.css'
