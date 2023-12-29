@@ -27,7 +27,7 @@ import {HousingLocation} from '../housing_location/locationList'
           <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
    </article>
   `,
-  styles: [
+  styleUrls: [
     './details.component.css'
   ]
 })
