@@ -49,6 +49,11 @@ export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute)
   housingService = inject(HousingService)
   housingLocation: HousingLocation| undefined
+  applyForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+  });
   constructor(){
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
