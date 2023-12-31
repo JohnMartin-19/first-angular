@@ -16,10 +16,9 @@ import {HousingLocationComponent} from '../housing_location/housing_location.com
     </section>
     <section class="results">
       
-      <app-housing-location 
-      *ngFor="let housingLocation of housingLocationList" [housingLocation]="housingLocation">
+    <app-housing-location 
+    *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation">
     </app-housing-location>
-      
     </section>
     
   `,
