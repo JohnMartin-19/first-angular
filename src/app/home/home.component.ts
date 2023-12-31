@@ -9,9 +9,9 @@ import {HousingLocationComponent} from '../housing_location/housing_location.com
   imports: [CommonModule,HousingLocationComponent],
   template: `
     <section>
-      <form>
-        <input type="text" placeholder="Filter by city" />
-        <button class="primary" type="button">Search</button>
+    <form>
+        <input type="text" placeholder="Filter by city" #filter />
+        <button class="primary" type="button" (click)="filterResult(filter.value)">Search</button>
       </form>
     </section>
     <section class="results">
