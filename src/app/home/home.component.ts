@@ -26,6 +26,7 @@ import {HousingLocationComponent} from '../housing_location/housing_location.com
 export class HomeComponent {
   housingLocationList: HousingLocation[] = [];
   housingService: HousingService = inject(HousingService);
+  filteredLocationList: HousingLocation[] = []
 
   constructor() {
     this.housingLocationList = this.housingService.getAllHousingLocations();
